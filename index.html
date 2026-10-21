@@ -85,4 +85,4 @@ function library(){
 
 function history(){$('#main').innerHTML=heading('YOUR LEARNING TRAIL','练习记录','记录只保存在当前浏览器，最多保留最近 40 次。')+`<section class="panel">${state.history.length?state.history.map(h=>`<div class="history-row"><div><strong>${new Date(h.ended).toLocaleString('zh-CN')}</strong><p>${h.total} 题 · 翻译 ${h.trans} 题${h.pending?` · ${h.pending} 题待自评`:''}</p></div><b>${h.auto?Math.round(h.correct/h.auto*100)+'%':'—'}<small>客观题 ${h.correct}/${h.auto}</small></b></div>`).join(''):'<div class="empty">还没有练习记录。<p>完成第一次考核，留下你的学习足迹。</p></div>'}</section>`}
 layout();render();
-</script></body></html>
+</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"59922d82a0c04936836369b66a79dbd9"}'></script></body></html>
